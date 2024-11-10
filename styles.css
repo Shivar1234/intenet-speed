@@ -1,79 +1,80 @@
-/* General Reset */
+/* style.css */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    text-align: center;
+  }
+  
+  body {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .calculator {
+    background-color: #111;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
     padding: 20px;
-}
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-header h1 {
-    color: #00ffcc;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px #00ffcc;
-}
-
-.speed-test {
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
-}
-
-button {
-    background-color: #00ffcc;
+    width: 350px;
+  }
+  
+  .display {
+    width: 100%;
+    height: 60px;
+    font-size: 2.5em;
+    text-align: right;
+    background-color: #222;
+    color: #ffffff; /* Neon Green */
     border: none;
-    color: #121212;
-    padding: 15px 30px;
-    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(37, 193, 255, 0.8);
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .button {
+    background-color: #333;
+    color: #ffffff;
+    font-size: 1.8em;
+    padding: 20px;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.9);
-}
-
-.result {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: #00ffcc;
-}
-
-footer {
-    margin-top: 30px;
-    font-size: 1rem;
-    color: #b0b0b0;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-}
+    transition: 0.2s;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+  }
+  
+  .button:hover {
+    background-color: #09efff;
+    box-shadow: 0px 0px 25px rgb(196, 197, 196);
+  }
+  
+  .operator {
+    background-color: #09efff; /* Neon Orange for operators */
+  }
+  
+  .operator:hover {
+    background-color: #09efff;
+    box-shadow: 0px 0px 25px #09efff(255, 87, 51, 1);
+  }
+  
+  .button:active {
+    background-color: #c8f500;
+    box-shadow: 0 0 20px rgba(9, 241, 191, 0.644);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
